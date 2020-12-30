@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+header {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  background-color: aqua;
+  border: solid #181f1b;
+  border-width: 3px 0px;
+
+  position: sticky;
+  top: 0px;
+}
