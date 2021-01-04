@@ -4,7 +4,47 @@ body {
   background-color: teal;
   color: white;
 }
-
 .clr {
-  clear:both;
+  clear: both;
+}
+
+#blog_container {
+  color:black;
+  margin-left:10%;
+  max-width: fit-content;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+#blog_container .recent {
+  max-height: 15%;
+  display: flex;
+  overflow: hidden;
+}
+
+#blog_container .recent article {
+  max-width: 250;
+  overflow: hidden;
+  margin: 10px;
+}
+
+#blog_container .recent article p {
+  margin:0;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+#blog_container .recent article h6 {
+  font-family:"roboto", sans-serif;
+  color:grey;
+  font-weight:1400;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+#blog_container .recent article img {
+  width: 250;
+  height: 150;
 }
