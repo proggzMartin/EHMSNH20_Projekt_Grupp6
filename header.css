@@ -1,24 +1,16 @@
-h1, h2 {
-  background-color: blue;
-}
-
-div {
-  background-color: red;
-}
-p {
-  background-color: #00ff00;
-}
-#content {
-  background-color: coral;
-}
 
 nav {
-  border: 1px solid hotpink;
-
+  border-bottom: 1px solid hotpink;
+  background-color: darkslategrey;
   /* huvudmenyn följer med om man scrollar */
   position: sticky;
   top: 0px;
   /* ---- */
+}
+
+#topShelf {
+  background: #2b136e;
+  color: coral;
 }
 
 nav ul {
@@ -39,7 +31,7 @@ nav li {
   color: coral;
 }
 .headerLink:hover{
-  color: blue;
+  color: white;
 }
 
 #headerTitle {
