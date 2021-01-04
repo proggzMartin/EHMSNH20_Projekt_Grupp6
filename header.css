@@ -1,40 +1,62 @@
+/* https://www.youtube.com/watch?v=PwWHL3RyQgk */
+
+
+/* @import url(''); <-- för o importera ex. font */
+
+#topShelf {
+  background: #3b3b3b;
+  color: coral;
+  font-size: 24px;
+  padding: 40px 30px;
+  text-align: right;
+}
+
 
 nav {
-  border-bottom: 1px solid hotpink;
+  border-top: 18px solid #3b3b3b;
+  border-bottom: 18px solid #3b3b3b;
   background-color: darkslategrey;
   /* huvudmenyn följer med om man scrollar */
   position: sticky;
   top: 0px;
+  padding:5px 0px
   /* ---- */
 }
 
-#topShelf {
-  background: #2b136e;
-  color: coral;
-}
-
 nav ul {
+  margin:auto;
+  width: fit-content;
   list-style-type: none;
   overflow: hidden;
-
-  margin: 0px;
-  padding: 0px;
+  padding-right: 20px;
 }
 
 nav li {
-  margin: 10px 10px;
+  padding: 10px;
   display: inline;
-}
-
-.headerLink {
-  text-decoration: none;
-  color: coral;
-}
-.headerLink:hover{
-  color: white;
 }
 
 #headerTitle {
   font-size: 18px;
   letter-spacing: 3px;
+  border-right: 2px solid white;
 }
+
+
+/* transition colors trick from https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/ */
+.headerLink {
+  color: coral;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+}
+
+.headerLink:hover{
+  color: white;
+  transition: color 300ms ease;
+
+}
+
+
