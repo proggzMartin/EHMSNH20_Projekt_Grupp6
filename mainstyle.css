@@ -4,37 +4,65 @@ body {
   background-color: teal;
   color: white;
 }
+
+#footer{
+  margin: 0;
+  padding: 0;
+}
 .clr {
   clear: both;
 }
 
-#blog_container {
+#blogg_container {
   color:black;
-  margin-left:10%;
-  max-width: fit-content;
-  border: 1px solid black;
   overflow: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-#blog_container .recent {
+#blogg_container h1 {
+  font-family:"roboto", sans-serif;
+  color: rgb(255, 152, 56);
+  margin:0;
+  padding: 0;
+}
+
+#blogg_container .recent {
+  margin: 0;
+  padding: 0;
   max-height: 15%;
   display: flex;
+  border: 1px solid black; 
+  clear:right;
+}
+
+#blogg_container a{
+  text-decoration: none;
+  color:inherit;
+  font-family: inherit;
+}
+
+#blogg_container .recent article {
+  max-width: 250px;
+  margin: 0 10px;
   overflow: hidden;
 }
 
-#blog_container .recent article {
-  max-width: 250;
-  overflow: hidden;
-  margin: 10px;
+#blogg_container .recent article:first-of-type {
+  margin-left:0;
 }
 
-#blog_container .recent article p {
-  margin:0;
-  margin-bottom: 25px;
+#blogg_container .recent article:last-of-type {
+  margin-left:0;
+}
+
+#blogg_container .recent article p {
+  margin: 0;
   font-weight: bold;
+  font-family:"roboto", sans-serif;
 }
 
-#blog_container .recent article h6 {
+#blogg_container .recent article h6 {
   font-family:"roboto", sans-serif;
   color:grey;
   font-weight:1400;
@@ -44,7 +72,15 @@ body {
   text-align: right;
 }
 
-#blog_container .recent article img {
+#blogg_container .recent article img {
   width: 250;
   height: 150;
 }
+
+#blogg_container .hot {
+  border: 1px solid black;
+  margin:0;
+  padding:0;
+  margin-top:20px;
+}
+
