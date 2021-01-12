@@ -34,12 +34,16 @@ body {
   padding: 0;
   max-height: 15%;
   display: flex;
-  /*border: 1px solid black; */
-  max-width: 80%;
+  border-right: 1px solid black;
+  width: 80%;
   float: left;
+  overflow:hidden;
 }
 
-
+#blogg_container .recent a {
+  overflow: hidden;
+  display: block;
+}
 
 #blogg_container .recent article {
   max-width: 250px;
@@ -75,11 +79,10 @@ body {
 }
 
 #blogg_container .hot {
-  /*border: 1px solid black;*/
   margin:0;
   padding:0;
   float: right;
-  max-width: 20%;
+  max-width: 19%;
   overflow: hidden;
 }
 
@@ -106,6 +109,7 @@ body {
 #blogg_container .hot p {
   padding: 0;
   margin: 0;
+  font-weight: bold;
 }
 
 #blogg_container .imgCoronaWide {
@@ -120,8 +124,6 @@ body {
   padding: 0;
   max-height: 15%;
   width: 80%;
-  /*max-width: 80%;
-  display: flex;
-  border: 1px solid black; */
+  border-right: 1px solid black;
   float: left;
 }
