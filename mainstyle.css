@@ -18,10 +18,15 @@ body {
 }
 
 #blogg_container h1 {
-  font-family:"roboto", sans-serif;
   color: rgb(255, 152, 56);
   margin:0;
   padding: 0;
+  
+}
+
+#blogg_container a{
+  text-decoration: none;
+  color:inherit;
 }
 
 #blogg_container .recent {
@@ -29,16 +34,12 @@ body {
   padding: 0;
   max-height: 15%;
   display: flex;
-  border: 1px solid black; 
-  clear:right;
-  
+  /*border: 1px solid black; */
+  max-width: 80%;
+  float: left;
 }
 
-#blogg_container a{
-  text-decoration: none;
-  color:inherit;
-  font-family: inherit;
-}
+
 
 #blogg_container .recent article {
   max-width: 250px;
@@ -57,11 +58,9 @@ body {
 #blogg_container .recent article p {
   margin: 0;
   font-weight: bold;
-  font-family:"roboto", sans-serif;
 }
 
 #blogg_container .recent article h6 {
-  font-family:"roboto", sans-serif;
   color:grey;
   font-weight:1400;
   font-size: 12px;
@@ -76,10 +75,37 @@ body {
 }
 
 #blogg_container .hot {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin:0;
   padding:0;
-  margin-top:20px;
+  float: right;
+  max-width: 20%;
+  overflow: hidden;
+}
+
+#blogg_container .hot a {
+  height: 80px;
+  width: 5%;
+}
+
+#blogg_container .hot img {
+  display: inline-block;
+  height: 150px;
+  width: 100%;
+}
+
+#blogg_container .hot h6 {
+  color:grey;
+  font-weight:1400;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+#blogg_container .hot p {
+  padding: 0;
+  margin: 0;
 }
 
 #blogg_container .imgCoronaWide {
@@ -93,8 +119,9 @@ body {
   margin: 0;
   padding: 0;
   max-height: 15%;
-  max-width: 80%;
+  width: 80%;
+  /*max-width: 80%;
   display: flex;
-  border: 1px solid black; 
-  clear:right;
+  border: 1px solid black; */
+  float: left;
 }
