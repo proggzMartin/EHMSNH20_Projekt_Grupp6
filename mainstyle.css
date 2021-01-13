@@ -42,7 +42,7 @@ body {
 }
 
 
-img{
+.grid-container-evenemang img{
   max-width: 100%;
   max-height: 100%;
   display: block;
@@ -51,6 +51,14 @@ img{
 
 }
 
+.grid-item img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  outline: 5px solid black;
+  
+
+}
 
 .grid-container-evenemang{
   display: grid;
@@ -209,6 +217,7 @@ font-weight: 1000;
 #blogg_container .recent article img {
   width: 250px;
   height: 150px;
+  border: none;
 }
 
 #blogg_container .hot {
