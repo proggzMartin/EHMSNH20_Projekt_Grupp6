@@ -93,7 +93,7 @@ nav li {
 /* ========================================= */
 
 .clr {
-  clear:both;
+  clear: both;
 }
 
 .grid-container {
@@ -101,7 +101,7 @@ nav li {
   grid-template-columns: auto auto auto;
   background-color:teal;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   
   
@@ -129,7 +129,7 @@ nav li {
 }
 
 
-img{
+.grid-container-evenemang img{
   max-width: 100%;
   max-height: 100%;
   display: block;
@@ -138,6 +138,14 @@ img{
 
 }
 
+.grid-item img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  outline: 5px solid black;
+  
+
+}
 
 .grid-container-evenemang{
   display: grid;
@@ -326,3 +334,122 @@ p.copy{
 }
 
 
+#blogg_container {
+  color:black;
+  overflow: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 80%;
+}
+
+#blogg_container h1 {
+  color: rgb(255, 152, 56);
+  margin:0;
+  padding: 0;
+  
+}
+
+#blogg_container a{
+  text-decoration: none;
+  color:inherit;
+}
+
+#blogg_container .recent {
+  margin: 0;
+  padding: 0;
+  max-height: 15%;
+  display: flex;
+  border-right: 1px solid black;
+  width: 80%;
+  float: left;
+  overflow:hidden;
+}
+
+#blogg_container .recent a {
+  overflow: hidden;
+  display: block;
+}
+
+#blogg_container .recent article {
+  max-width: 250px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+#blogg_container .recent article:first-of-type {
+  margin-left:0;
+}
+
+#blogg_container .recent article:last-of-type {
+  margin-left:0;
+}
+
+#blogg_container .recent article p {
+  margin: 0;
+  font-weight: bold;
+}
+
+#blogg_container .recent article h6 {
+  color:grey;
+  font-weight:1400;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+#blogg_container .recent article img {
+  width: 250px;
+  height: 150px;
+  border: none;
+}
+
+#blogg_container .hot {
+  margin:0;
+  padding:0;
+  float: right;
+  max-width: 19%;
+  overflow: hidden;
+}
+
+#blogg_container .hot a {
+  height: 80px;
+  width: 5%;
+}
+
+#blogg_container .hot img {
+  display: inline-block;
+  height: 150px;
+  width: 100%;
+}
+
+#blogg_container .hot h6 {
+  color:grey;
+  font-weight:1400;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+#blogg_container .hot p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+#blogg_container .imgCoronaWide {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 40%;
+}
+
+#blogg_container .corona {
+  margin: 0;
+  padding: 0;
+  max-height: 15%;
+  width: 80%;
+  border-right: 1px solid black;
+  float: left;
+}
