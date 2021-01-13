@@ -1,18 +1,21 @@
-<html>
+<!DOCTYPE html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Johannes A">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1-0">
   <link rel="stylesheet" href="cssReset.css" />
-  <link rel="stylesheet" href="mainstyle.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> <!-- Font awesome, för ikoner. -->
+  <link rel="stylesheet" type="text/css" href="mainstyle.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <title>-=EventSpotter=-</title>
+    
 </head>
-  
+<html>
 
-  <body>
-    <!-- ====================================== -->
+
+<body>
+  <!-- ====================================== -->
     <!-- =============== HEADER =============== -->
     
     <div id="topShelf">
@@ -36,7 +39,7 @@
             <li><a id="headerTitle" class="headerLink" href="index.html">EventSpotter</a></li>
               <li><a class="headerLink" href="Index.html">Start</a></li>
               <li><a class="headerLink" href="Blogg.html"> Blogg </a></li>
-              <li><a class="headerLink" href="Contact.html">Kontakt</a></li>
+              <li><a class="headerLink" href="Kontakt.html">Kontakt</a></li>
               <li><a class="headerLink" href="header.html">Om oss</a></li>
               <li><a class="headerLink" href="Evenemang.html">Evenemang</a></li>
 
@@ -52,25 +55,42 @@
     <!-- =========================================== -->
 
 
+ <div class="content">       
+     
 
-    <h2 id="Evenemang_Artists">Arvingarna</h2>
-    <div class="grid-container-evenemang">
+<section class="info">
+ 
+
+          <h2>kontakta oss på</h2>
+          <div class="push20"> 
+           </div>
+          <p> Email:   <a class="Email" href="">eventspotter@gmail.com</a></p>
+          <p> Telefon: <a class="phone" href="46-321 21 31">46-321 21 31 </a></p>
+          <hr>
+
+          <h3> eller skriv till oss direkt här!</h3>
+          <div class="push20">     
+               </div>
+          <label for="subject"> Ämne:</label><br>
+          <input class="form-control" type="text" id="subject" name="Ämne"><br>
+          <label for="firstName">Förnamn:</label><br>
+          <input class="form-control" type="text" id="firstName" name="firstName"><br>
+          <label for="lastName">Efternamn:</label><br>
+          <input class="form-control" type="text" id="lastName" name="lastName"><br>
+          <label for="kontakt-text" id="kontakt-text-label">Meddelande:</label><br>
+          <textarea  class="form-control" rows="3" name="Meddelande" id="kontakt-text" placeholder="skriv något..."></textarea><br>
+          <input class="form-control" type="submit" value="Skicka" class="höger">
+
+        
+    </section>
+
   
-      <div class="picture-grid">  <img src="img/Arvingarna_Evenemang.jpg">  </img>          </div>
-      <div class="text-grid">Arvingarna är ett svenskt dansband från Partille utanför Göteborg som bildades 1989 och består av Casper Janebrink (sång och bas), Kim Carlsson (sång och gitarr), Tommy Carlsson (trummis och sång) och Lars Larsson (sång, klaviatur, gitarr). 
-        Bandet medverkade i den svenska Melodifestivalen 1993, 1995, 1999, 2002 och 2019. De framförde 1993 bidraget "Eloise", som vann, och fick därmed representera Sverige i Eurovision Song Contest 1993 i Millstreet, där bidraget slutade på sjunde plats. År 1999 sjöng de bidraget "Det svär jag på" och under framträdandet fungerade inte Casper Janebrinks mikrofon, varför gruppen fick framföra sitt bidrag på nytt. 2019 gick gruppens bidrag "I Do" vidare till final.</div>
-      <div class="date-grid1">Datum: Feb 20</div>
-      <div class="address-grid1">Plats: Björnstigen 7, Stockholm</div>
-      <div class="date-grid2">Datum: Mars 07</div>
-      <div class="address-grid2">Plats: Skogatan 5, Borås</div>
-      <div class="date-grid1">Datum: April 15</div>
-      <div class="address-grid1">Plats: Storgatan 37, Malmö</div>
-      <div class="date-grid2">Datum: Maj 10</div>
-      <div class="address-grid2">Plats: Karlsgatan 28, Halmstad</div>
-    
-    </div>
+       <div class="push">
+       </div> 
+       </div>  
 
-    
+
+
 
     <footer class="footer">
       <img src="img/eventspotter2.png" alt="" id="logo1" >
@@ -78,6 +98,8 @@
       <div class="text">
         <p>Följ oss på </p>
       </div>
+
+          
       <div class="row">
         <div class="column">                 
         <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="" id="facebook" ></a>
@@ -90,5 +112,7 @@
         <p class="copy"> &copy;  2020-2021 Evenspotter. All rights reserved. </p>
       </div>
     </footer>
+
+
   </body>
 </html>
