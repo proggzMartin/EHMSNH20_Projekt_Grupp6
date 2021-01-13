@@ -1,0 +1,93 @@
+
+
+/*   Footer delen   */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+
+  display: flex;
+  flex-direction: column;
+
+}
+.content {
+  flex: 1 0 auto;
+  background-color: #;
+}
+.footer {
+  flex-shrink: 0;
+}
+footer{
+	margin: 0px;
+	border-top: solid 5px #998888;
+	background-color: #0D1B2A;
+
+
+}
+
+footer p{
+	width: 80%;
+    color: white;
+	margin: 20px ;
+	font-size: 20px;
+
+}
+p.copy{
+    color: white;
+	text-align: right;
+	margin:10px;
+
+}
+
+#logo1 {
+	border: 5px solid red;
+    max-width: 20%;
+    margin: 20px;  
+}
+
+#facebook {
+	width: 40px;
+	margin: 20px;
+}
+
+#instagram {
+	width: 40px;
+	margin: 20px;
+
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 4%;
+ 
+}
+
+
+
+.info {
+      margin-left: auto;
+      margin-right: auto;
+	  width: 50%;
+	  font-size: 16px;
+}
+
+
+
+#footer, .push {
+    height: 80px; 
+}
+
+.push20 {
+	height: 20px;
+}
+
