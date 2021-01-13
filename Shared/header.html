@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../cssReset.css" />
     <link rel="stylesheet" href="../mainstyle.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> <!-- Font awesome, för ikoner. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <title>HeaderDocument</title>
   </head>
 
   <body>
-    
     <div id="topShelf">
       <div id="topshelfH1">
         <span >EventSpotter</span>
@@ -20,13 +22,21 @@
       </div>
     </div>
 
-    <nav>
-      <ul>
-        <li id="headerTitle"><a class="headerLink" href="header.html">EventSpotter</a></li>
-        <li><a class="headerLink" href="header.html">Events</a></li>
-        <li><a class="headerLink" href="header.html">Kontakt</a></li>
-        <li><a class="headerLink" href="header.html">Om oss</a></li>
-      </ul>
+    <nav class="navbar-expand-sm navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" >
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav">
+            <li><a id="headerTitle" class="headerLink" href="header.html">EventSpotter</a></li>
+            <li><a class="headerLink" href="header.html">Events</a></li>
+            <li><a class="headerLink" href="header.html">Kontakt</a></li>
+            <li><a class="headerLink" href="header.html">Om oss</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <p>Skräp</p>
@@ -101,5 +111,7 @@
     <p>Skräp</p>
     <p>Skräp</p>
     <p>Skräp</p>
+
+    
   </body>
 </html>
