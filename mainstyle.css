@@ -18,6 +18,19 @@ body {
   border-bottom: 1px solid white;;
 }
 
+.bodyLink {
+  border: 1px solid #92AC86;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #443F30;
+
+}
+
+.bodyLink:hover {
+  border-color: white;
+  border-radius: 10px;
+}
+
 
 
 /* ========================================= */
