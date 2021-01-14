@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
 
-  background-color: white;
+  background-color: #0D1B2A !important;
   color: black;
 }
 
@@ -223,7 +223,7 @@ font-weight: 1000;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 65px;
-  -webkit-text-stroke: 2px black;
+  /*-webkit-text-stroke: 2px black;*/
   -webkit-text-fill-color: white;
 }
 
@@ -231,7 +231,7 @@ font-weight: 1000;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 65px;
-  -webkit-text-stroke: 2px black;
+  /*-webkit-text-stroke: 2px black;*/
   -webkit-text-fill-color: white;
 }
 
@@ -242,7 +242,7 @@ font-weight: 1000;
 
 /*   Footer delen   */
 html, body {
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
 
@@ -255,10 +255,12 @@ body {
 }
 .content {
   flex: 1 0 auto;
-  background-color: #;
+  /*background-color: black;*/
 }
 .footer {
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 footer{
 	margin: 0px;
@@ -272,13 +274,13 @@ footer{
 
 footer p{
 	width: 80%;
-    color: white;
+  color: white;
 	margin: 20px ;
 	font-size: 20px;
 
 }
 p.copy{
-    color: white;
+  color: white;
 	text-align: right;
 	margin:10px;
 
@@ -334,7 +336,10 @@ p.copy{
 }
 
 
+
+
 #blogg_container {
+  all:unset;
   color:black;
   overflow: hidden;
   margin-left: 10%;
@@ -343,7 +348,7 @@ p.copy{
 }
 
 #blogg_container h1 {
-  color: rgb(255, 152, 56);
+  color: #A7D49B;
   margin:0;
   padding: 0;
   
@@ -386,7 +391,9 @@ p.copy{
 
 #blogg_container .recent article p {
   margin: 0;
+  line-height: 1;
   font-weight: bold;
+  color: #A7D49B;
 }
 
 #blogg_container .recent article h6 {
@@ -433,9 +440,10 @@ p.copy{
 }
 
 #blogg_container .hot p {
-  padding: 0;
   margin: 0;
+  line-height: 1;
   font-weight: bold;
+  color: #A7D49B;
 }
 
 #blogg_container .imgCoronaWide {
@@ -452,4 +460,11 @@ p.copy{
   width: 80%;
   border-right: 1px solid black;
   float: left;
+}
+
+#blogg_container .corona p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #A7D49B;
 }
