@@ -362,7 +362,7 @@ p.copy{
 #blogg_container .recent {
   margin: 0;
   padding: 0;
-  max-height: 15%;
+  max-height: 20%;
   display: flex;
   border-right: 1px solid black;
   width: 80%;
@@ -379,6 +379,7 @@ p.copy{
   max-width: 250px;
   margin: 0 10px;
   overflow: hidden;
+  height: 250px;
 }
 
 #blogg_container .recent article:first-of-type {
