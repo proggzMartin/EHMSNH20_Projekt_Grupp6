@@ -371,7 +371,7 @@ p.copy{
   text-decoration: none;
   color:inherit;
 }
-
+@media only screen and (min-width: 900px){
 #blogg_container .recent {
   margin: 0;
   padding: 0;
@@ -381,7 +381,18 @@ p.copy{
   width: 80%;
   float: left;
   overflow:hidden;
-}
+}}
+
+@media only screen and (max-width: 900px){
+  #blogg_container .recent {
+    margin: 0;
+    padding: 0;
+    max-height: 20%;
+    display: flex;
+    width: 80%;
+    float: left;
+    overflow:hidden;
+  }}
 
 #blogg_container .recent a {
   overflow: hidden;
@@ -425,17 +436,18 @@ p.copy{
   border: none;
 }
 
+@media only screen and (min-width: 900px){
 #blogg_container .hot {
   margin: 0;
-  padding:0;
+  padding: 0;
   float: right;
   max-width: 19%;
   overflow: hidden;
+  display: block;
 }
 
 #blogg_container .hot a{
   height: 80px;
-  width: 5%;
 }
 
 #blogg_container .hot p{
@@ -470,6 +482,76 @@ p.copy{
   width: 100%;
   height: 40%;
 }
+
+#blogg_container .corona {
+  margin: 0;
+  padding: 0;
+  max-height: 15%;
+  width: 80%;
+  border-right: 1px solid black;
+  float: left;
+}
+
+#blogg_container .corona p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #A7D49B;
+}
+}
+
+@media only screen and (max-width: 900px) {
+  #blogg_container .hot {
+    margin: 0;
+    padding: 0;
+    max-height: 20%;
+    display: flex;
+    width: 80%;
+    float: left;
+    overflow:hidden;
+  }
+  
+  #blogg_container .hot a{
+    overflow: hidden;
+    display: block;
+    max-width: 250px;
+    margin-left: 9px;
+    height: 250px;
+  }
+  
+  
+  #blogg_container .hot img {
+    width: 250px;
+    height: 150px;
+    border: none;
+  }
+  
+  #blogg_container .hot h6 {
+    color:grey  !important;
+    font-weight:1400;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: inherit;
+  }
+  
+  #blogg_container .hot p {
+    margin: 0;
+    line-height: 1;
+    font-weight: bold;
+    color: #A7D49B;
+    width: inherit;
+  }
+} 
+
+#blogg_container .imgCoronaWide {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 40%;
+}
+
 
 #blogg_container .corona {
   margin: 0;
