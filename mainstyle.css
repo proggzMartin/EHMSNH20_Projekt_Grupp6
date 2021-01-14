@@ -10,6 +10,16 @@ body {
   background-color: #696047;
 }
 
+.mainText {
+  color: #92AC86;
+}
+
+.borderBottomWhite {
+  border-bottom: 1px solid white;;
+}
+
+
+
 /* ========================================= */
 /* ================== HEADER =============== */
 
